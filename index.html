@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles.css">
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class = 'logo'>
+                <ul>
+                    <li><a href = '#'>Home</a></li>
+                    <li><a href = '#'>About</a></li>
+                    <li><a href = '#'>Services</a></li>
+                    <li><a href = '#'>Portfolio</a></li>
+                    <li><a href = '#'>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full-stack Developer</p>
+                <h1>Hello, I'm <span>Dylan</span><br> Larkin From Loveland, CO</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- -------------about--------------- -->
+    <div id="about">
+        <div class="container">
+             <div class="row">
+                <div class="about-col-1">
+                    <img src = "images/User.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Dylan, a passionate full-stack developer with a deep love for creating elegant, interactive, and user-friendly web applications. Over the past year I have honed my skills in both front-end and back-end development, allowing me to seamlessly bridge the gap between design and technical implementation. Outside of coding, I love to game, play bass, collect manga, and woodwork!</p>
+
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id ='skills'>
+                        <ul>
+                            <li><span>Front-end</span><br>Javascript, HTML, CSS, Bootstrap</li>
+                            <li><span>Back-end</span><br>Python, Flask, SQLAlchemy, PostgreSQL </li>
+                            <li><span>Tools & Technologies</span><br>Windows, pgAdmin4, Visual Studio Code, Git, Github, GCS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = 'experience'>
+                        <ul>
+                            <li><span>DoorDash</span><br>Delivery Driver, June 2022 - Present</li>
+                            <li><span>Thompson School District</span><br>Substitute Teacher, October 2021 - May 2022</li>
+                            <li><span>Monroe's Lounge</span><br>Dish Washer, December 2020 - September 2021</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = 'education'>
+                        <ul>
+                            <li><span>Mountain View High School</span><br>High School Diploma</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
