@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "styles.css">
+    <script src="https://kit.fontawesome.com/afe882c8dd.js" crossorigin="anonymous"></script>
     <title>Personal Portfolio Website</title>
 </head>
 <body>
@@ -35,12 +36,16 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hello! I'm Dylan, a passionate full-stack developer with a deep love for creating elegant, interactive, and user-friendly web applications. Over the past year I have honed my skills in both front-end and back-end development, allowing me to seamlessly bridge the gap between design and technical implementation. Outside of coding, I love to game, play bass, collect manga, and woodwork!</p>
+                    <p>Hello! I'm Dylan, a passionate full-stack developer with a deep love for creating elegant, interactive, and user-friendly web applications. Over the past year I have honed my skills in both front-end and back-end development, allowing me to seamlessly bridge the gap between design and technical implementation.</p>
+                    <br>
+                    <p>I thrive on solving problems and driving innovation. And because I am a newer developer, I commit myself to continuous learning to stay on top of industry trends. I value effective communication and teamwork, and bring a proactive, problem solving mindset to every project.</p>
+                    <br>
+                    <p>Outside of coding, I love to game, play bass, collect manga, and woodwork!</p>
 
                     <div class="tab-titles">
                         <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
-                        <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                        <p class = "tab-links" onclick = "opentab('education')">Education</p> 
                     </div>
                     <div class="tab-contents active-tab" id ='skills'>
                         <ul>
@@ -64,9 +69,62 @@
                 </div>
              </div>
         </div>
-
-
     </div>
+
+    <!-- -----------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div> 
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design web applications</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>I design web applications</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>I design web applications</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Work-1.png">
+                    <div class="layer">
+                        <h3>Bramble Rings</h3>
+                        <p>This is an E-commerce website for my small business Bramble Rings. It allows users to create accounts and purchase rings online!</p>
+                        <a href="https://bramblerings.com/" target="blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.PNG">
+                    <div class="layer">
+                        <h3>Robo-Tomo!</h3>
+                        <p>"Robo-Tomo!" is a local two player fighting game where one player controls "Robo" the robot, and another player controls "Tomo", the tomato!</p> 
+                        <a href="https://github.com/Dlarkin66/RoboTomo/archive/refs/heads/main.zip"><i class="fa-solid fa-download"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Dlarkin66" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
 
     <script>
 
