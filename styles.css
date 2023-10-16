@@ -106,8 +106,8 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     border-radius: 15px;
 }
 
@@ -117,13 +117,17 @@ nav ul li a:hover::after{
 
 .about-col-2 h1 {
     margin-bottom: 10px;
-    color: rgb(101, 16, 212);
+    color: white;
 }
 
 .sub-title {
     font-size: 60px;
     font-weight: 600px;
     color: white;
+}
+
+.purple-span {
+    color: rgb(101, 16, 212);
 }
 
 .tab-titles {
@@ -173,53 +177,6 @@ nav ul li a:hover::after{
 .tab-contents.active-tab {
     opacity: 1;
     display: block;
-}
-
-
-/* -----------services----------- */
-
-#services {
-    padding: 30px 0;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover{
-    background: rgb(101, 16, 212);
-    transform: translateY(-10px);
 }
 
 
@@ -288,11 +245,12 @@ nav ul li a:hover::after{
 }
 
 .work:hover img{
-    transform: scale(1.1);
+    transform: scale(.95);
 }
 
 .work:hover .layer {
     height: 100%;
+    transform: scale(.95);
 }
 
 .btn {
@@ -353,6 +311,11 @@ nav ul li a:hover::after{
 .btn.btn2 {
     display: inline-block;
     background: rgb(101, 16, 212);
+    transition: 0.5s;
+}
+
+.btn.btn2:hover {
+    transform: scale(.95);
 }
 
 .contact-right form {
@@ -387,6 +350,12 @@ form .btn2 {
     margin-top: 20px;
 }
 
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+
+}
 
 /* responsivity */
 nav .fa-solid {
@@ -477,17 +446,11 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 
-    form .btn.btn2 {
-        margin-left: 55px;
-        margin-right: auto;
-    }
-
-    .btn.btn2 {
-        margin-left: 25px;
-        margin-right: auto;
-    }
-
     .copyright {
         font-size: 14px;
+    }
+
+    .button-container {
+        text-align: center;
     }
 }
