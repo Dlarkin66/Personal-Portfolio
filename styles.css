@@ -91,14 +91,19 @@ nav ul li a:hover::after{
 /* --------------------about-------------------- */
 
 #about {
-    padding: 80px 0;
+    padding: 150px 0;
     color: grey;
+    background-image: url(images/about-background.png);
+    background-attachment: fixed;
 }
 
 #about .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid rgb(101, 16, 212);
 }
 
 .about-col-1 {
@@ -106,9 +111,11 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img {
-    height: 90%;
-    width: 90%;
+    height: 95%;
+    width: 95%;
+    border: 3px solid rgb(101, 16, 212);
     border-radius: 15px;
+    margin: 15px;
 }
 
 .about-col-2 {
@@ -116,7 +123,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2 h1 {
-    margin-bottom: 10px;
+    margin: 15px 0px;
     color: white;
 }
 
@@ -124,15 +131,22 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600px;
     color: white;
+    border-bottom: 5px solid rgb(101, 16, 212);
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.purple-span {
-    color: rgb(101, 16, 212);
+.about-col-2 p {
+    margin-top: 10px;
+}
+
+.about-desc {
+    width: 95%;
 }
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0px 40px;
 }
 
 .tab-links {
@@ -141,6 +155,7 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: white;
 }
 
 .tab-links::after {
@@ -172,6 +187,7 @@ nav ul li a:hover::after{
     opacity: 0;
     display: none;
     transition: 1s;
+    width: 100%
 }
 
 .tab-contents.active-tab {
@@ -430,28 +446,49 @@ nav .fa-solid {
         font-size: 40px;
     }
 
+    #about .row {
+        width: 115%;
+        margin-left: -20px;
+    }
+
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
     }
 
     .about-col-1 {
         margin-bottom: 30px;
-        margin-top: -25px;
     }
 
     .about-col-1 img {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         border-radius: 3px;
+        margin-top: 15px;
     }
 
     .about-col-2 {
         font-size: 14px;
     }
 
+    .about-col-2 .sub-title {
+        margin-top: -20px;
+        margin-left: 65px;
+    }
+
+    .about-desc {
+        width: 100%;
+        padding: 0 15px 0 15px;
+        text-align: center;
+    }
+
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
+        margin-left: 23px;
+    }
+    
+    .tab-contents {
+        padding: 0 15px 15px 15px;
     }
 
     .layer h3 {
